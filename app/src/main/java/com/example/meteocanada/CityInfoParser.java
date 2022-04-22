@@ -16,6 +16,7 @@ public class CityInfoParser {
 
     public static ArrayList<CityInfo> parseData(InputStream stream){
 //        debug(stream);
+        cityInfos = new ArrayList<>();
         try(Scanner input = new Scanner(stream).useDelimiter(",|\\n")) {
             if(input.hasNext()){
                 input.next();

@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Shashi/Documents/Git/android_weather/app/src/main/res/layout/activity_main.xml" value="0.3572916666666667" />
+        <entry key="..\:/Users/Shashi/Documents/Git/android_weather/app/src/main/res/layout/fragment_accueil.xml" value="0.33" />
+        <entry key="..\:/Users/Shashi/Documents/Git/android_weather/app/src/main/res/layout/fragment_aide.xml" value="0.3572916666666667" />
+        <entry key="..\:/Users/Shashi/Documents/Git/android_weather/app/src/main/res/layout/fragment_debug.xml" value="0.3572916666666667" />
         <entry key="..\:/Users/rukiy/AndroidStudioProjects/MeteoCanada/app/src/main/res/drawable/aide.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/rukiy/AndroidStudioProjects/MeteoCanada/app/src/main/res/drawable/ic_baseline_bug_report_24.xml" value="0.36302083333333335" />
         <entry key="..\:/Users/rukiy/AndroidStudioProjects/MeteoCanada/app/src/main/res/layout/activity_main.xml" value="0.264" />
@@ -15,7 +19,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

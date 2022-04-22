@@ -30,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
         // Pour permettre la navigation entre les pages en utilisant des fragments
         bottomNavigationView = findViewById(R.id.bottom_nav);
         bottomNavigationView.setSelectedItemId(R.id.accueil_frag);
-        getSupportFragmentManager().beginTransaction().replace(R.id.main_container, new Accueil()).commit();
         bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
@@ -49,32 +48,10 @@ public class MainActivity extends AppCompatActivity {
                             fragment = new debug();
                         break;
                 }
-                getSupportFragmentManager().beginTransaction().replace(R.id.main_container, fragment).commit();
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, fragment).commit();
                 return true;
             }
         });
-        SQLiteDatabase mydatabase = openOrCreateDatabase("your database name",MODE_PRIVATE,null);
-        new Thread(()->{
-            DBHelper helper = new DBHelper(getApplicationContext());
-            //get en
-            InputStream streamEn = NetworkClient.get("https://dd.weather.gc.ca/citypage_weather/docs/site_list_en.csv");
-            ArrayList<CityInfo> infoEn = CityInfoParser.parseData(streamEn);
-            for (CityInfo cityInfoEn: infoEn ) {
-                helper.insertCityInfo(cityInfoEn, DBHelper.TBL_CITY_REPO_EN);
-            }
-            //get fr
-            InputStream streamFr = NetworkClient.get("https://dd.weather.gc.ca/citypage_weather/docs/site_list_fr.csv");
-            ArrayList<CityInfo> infoFr = CityInfoParser.parseData(streamFr);
-            for (CityInfo cityInfoFr: infoFr ) {
-                helper.insertCityInfo(cityInfoFr, DBHelper.TBL_CITY_REPO_FR);
-            }
-
-            CityInfo cityFr = helper.getCityByName(DBHelper.TBL_CITY_REPO_FR, "montreal");
-            CityInfo cityEn = helper.getCityByName(DBHelper.TBL_CITY_REPO_EN, "montreal");
-            Log.i("CITY FR:",cityFr.city + " " + cityFr.province + " " + cityFr.file_name + " " + String.valueOf(cityFr.lat) + " " + String.valueOf(cityFr.lon));
-            Log.i("CITY EN:",cityEn.city + " " + cityEn.province + " " + cityEn.file_name + " " + String.valueOf(cityEn.lat) + " " + String.valueOf(cityEn.lon));
-
-        }).start();
     }
 
 
