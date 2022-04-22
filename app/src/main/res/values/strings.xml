@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">Meteo Canada</string>
+    <string name="a_propos_string">About</string>
+    <string name="accueil_string">Home</string>
+    <string name="aide_string">Help</string>
+    <string name="date">Date</string>
+    <string name="montreal">montreal_e</string>
+    <string name="terrebonne">terrebonne_e</string>
+    <string name="pincourt">pincourt_e</string>
+    <string name="mirabel">mirabel_e</string>
+    <string name="longueuil">longueuil_e</string>
+    <string name="laval">laval_e</string>
+    <string name="a_propos_text">Once the app is downloaded and installed, you are greeted from the home screen. This allows you to display the weather forecast for 6 cities (montreal,laval,terrebonne,mirabel,longueuil and pincourt) you are looking for in the province of Quebec. This application allows you to be on the lookout for the weather at all times. Other updates will be available eventually.</string>
+    <string name="aide_text">How to use the application?\n\n Searching for the name of the desired city in the search bar, it will display the weather information.\n\n Problem?\n\n Contact the support center : 514-343-6111</string>
+    <string name="string_search_city">Search city</string>
+    <string-array name="villes">
+        <item>montreal</item>
+        <item>longueuil</item>
+        <item>mirabel</item>
+        <item>pincourt</item>
+        <item>terrebonne</item>
+        <item>laval</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

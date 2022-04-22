@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/meteo_nav"
+    app:startDestination="@id/accueil_frag">
+
+    <fragment
+        android:id="@+id/accueil_frag"
+        android:name="com.example.meteocanada.Accueil"
+        android:label="fragment_accueil"
+        tools:layout="@layout/fragment_accueil" />
+    <fragment
+        android:id="@+id/a_propos_frag"
+        android:name="com.example.meteocanada.A_Propos"
+        android:label="fragment_a__propos"
+        tools:layout="@layout/fragment_a__propos" />
+    <fragment
+        android:id="@+id/aide_frag"
+        android:name="com.example.meteocanada.Aide"
+        android:label="fragment_aide"
+        tools:layout="@layout/fragment_aide" />
+    <fragment
+        android:id="@+id/debug"
+        android:name="com.example.meteocanada.debug"
+        android:label="fragment_debug"
+        tools:layout="@layout/fragment_debug" />
+</navigation>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/accueil_frag"
+        android:title="Accueil"
+        android:icon="@drawable/accueil"/>
+    <item
+        android:id="@+id/a_propos_frag"
+        android:title="A Propos"
+        android:icon="@drawable/a_propos"/>
+    <item
+        android:id="@+id/aide_frag"
+        android:title="Aide"
+        android:icon="@drawable/aide"/>
+    <item
+        android:id="@+id/debug_frag"
+        android:title="Debogue"
+        android:icon="@drawable/debug" />
+</menu>
